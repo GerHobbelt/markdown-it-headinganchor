@@ -15,10 +15,13 @@ CURR_HEAD   := $(firstword $(shell git show-ref --hash HEAD | cut -b -6) master)
 GITHUB_PROJ := https://github.com//adam-p/${NPM_PACKAGE}
 
 
-all: test browserify
+all: lint test 
 
 lint:
-	./node_modules/.bin/eslint --reset .
+	./node_modules/.bin/eslint .
+
+fix:
+	./node_modules/.bin/eslint --fix .
 
 test: lint
 	./node_modules/.bin/mocha -R spec

@@ -1,6 +1,6 @@
 {
-  "name": "markdown-it-headinganchor",
-  "version": "1.2.1",
+  "name": "@gerhobbelt/markdown-it-headinganchor",
+  "version": "1.2.1-1",
   "description": "markdown-it plugin that adds an anchor (i.e., `<a name=\"blah\"...>`) to headings.",
   "keywords": [
     "markdown-it-plugin",
@@ -20,18 +20,24 @@
   "license": "MIT",
   "main": "index.js",
   "scripts": {
-    "test": "make test"
+    "build": "make",
+    "lint": "make lint",
+    "fix": "make fix",
+    "test": "make test",
+    "pub": "npm publish --access public"
   },
   "devDependencies": {
-    "browserify": "*",
-    "chai": "*",
-    "coveralls": "^2.11.2",
-    "eslint": "0.10.2",
-    "eslint-plugin-nodeca": "^1.0.0",
-    "istanbul": "*",
-    "markdown-it": "^4.0.0",
-    "markdown-it-testgen": "~0.1.0",
-    "mocha": "*",
-    "uglify-js": "*"
+    "@gerhobbelt/markdown-it": "8.4.2-24",
+    "@gerhobbelt/markdown-it-testgen": "0.1.5-6",
+    "browserify": "16.2.2",
+    "chai": "4.1.2",
+    "coveralls": "3.0.2",
+    "eslint": "5.5.0",
+    "eslint-plugin-nodeca": "1.0.3",
+    "istanbul": "0.4.5",
+    "mocha": "5.2.0",
+    "semistandard": "^12.0.1",
+    "standard": "^12.0.1",
+    "uglify-js": "3.4.9"
   }
 }

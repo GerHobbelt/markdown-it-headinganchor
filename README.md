@@ -1,6 +1,6 @@
-[![Build Status](https://travis-ci.org/adam-p/markdown-it-headinganchor.svg?branch=master)](https://travis-ci.org/adam-p/markdown-it-headinganchor)
-[![NPM version](https://img.shields.io/npm/v/markdown-it-headinganchor.svg?style=flat)](https://www.npmjs.org/package/markdown-it-headinganchor)
-[![Coverage Status](https://coveralls.io/repos/adam-p/markdown-it-headinganchor/badge.svg)](https://coveralls.io/r/adam-p/markdown-it-headinganchor)
+[![Build Status](https://travis-ci.org/GerHobbelt/markdown-it-headinganchor.svg?branch=master)](https://travis-ci.org/GerHobbelt/markdown-it-headinganchor)
+[![NPM version](https://img.shields.io/npm/v/%40gerhobbelt%2Fmarkdown-it-headinganchor.svg?style=flat)](https://www.npmjs.org/package/%40gerhobbelt%2Fmarkdown-it-headinganchor)
+[![Coverage Status](https://coveralls.io/repos/GerHobbelt/markdown-it-headinganchor/badge.svg)](https://coveralls.io/r/GerHobbelt/markdown-it-headinganchor)
 
 
 # markdown-it-headinganchor
@@ -41,8 +41,8 @@ To refer to in heading anchor in a link, remove all spaces from the original tex
 Much like other markdown-it plugins, the usage is:
 
 ```js
-var md = require('markdown-it')();
-md.use(require('markdown-it-headinganchor'), {
+var md = require('@gerhobbelt/markdown-it')();
+md.use(require('@gerhobbelt/markdown-it-headinganchor'), {
   anchorClass: 'my-class-name', // default: 'markdown-it-headinganchor'
   addHeadingID: true,           // default: true
   addHeadingAnchor: true,       // default: true
